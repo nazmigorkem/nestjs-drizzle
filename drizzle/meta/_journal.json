@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1709738989880,
+      "tag": "0000_fancy_tomorrow_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1709743385030,
+      "tag": "0001_useful_avengers",
+      "breakpoints": true
+    }
+  ]
+}

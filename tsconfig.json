@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "NodeNext",
+        "target": "ESNext",
+        "module": "NodeNext",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "outDir": "./build",
+        "baseUrl": "./src",
+        "rootDir": "./src",
+        "paths": {
+            "#*": ["*"]
+        },
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "strict": true
+    },
+    "watchOptions": {
+        "watchFile": "fixedPollingInterval"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "drizzle.config.ts"]
+}
