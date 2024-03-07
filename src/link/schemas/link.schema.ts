@@ -16,4 +16,15 @@ export const Links = pgTable('links', {
     title: varchar('title', { length: 255 }).notNull(),
 });
 
-export type ILinks = typeof Links.$inferSelect;
+export const LinkUsages = pgTable('link_usages', {
+    id: uuid('id')
+        .primaryKey()
+        .default(sql`gen_random_uuid()`),
+    linkID: uuid('link_id')
+        .notNull()
+        .references(() => Links.id),
+    userID: uuid('user_id').notNull(),
+    createdAt: date('created_at')
+        .notNull()
+        .default(sql`CURRENT_DATE`),
+});
